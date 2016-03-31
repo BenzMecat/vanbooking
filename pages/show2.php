@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ปฏิทินการใช้รถยนต์ คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา</title>
+    <title>ระบบจองรถตู้-วิทยุการบินเชียงใหม่</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -59,7 +59,7 @@
 				<div class="col-lg-8">
                              <div class="panel panel-default">
                         <div class="panel-heading">
-                            รายละเอียดการขอใช้รถยนต์
+                            รายละเอียดการขอใช้รถตู้
                         </div>
                           <div class="panel-body">
                           <button class="btn btn-info btn-sm" > ผู้ขอใช้ </button>

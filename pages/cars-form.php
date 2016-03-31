@@ -40,7 +40,7 @@ if($(this).prop('checked') == false){
 
 <div class="row">
   <div class="col-lg-12">
-    <h4 class="page-header alert alert-warning"><i class="fa fa-car fa-fw"></i> บันทึกข้อมูลขอใช้รถยนต์</h4>
+    <h4 class="page-header alert alert-warning"><i class="fa fa-car fa-fw"></i> แบบฟอร์มขอใช้รถตู้</h4>
   </div>
   <!-- /.col-lg-12 -->
 </div>
@@ -60,13 +60,13 @@ if($(this).prop('checked') == false){
                
                 <div class="col-lg-4">
                   <div class="form-group">      
-                    <label>ผู้ขอใช้</label>
+                    <label>ชื่อผู้ขอใช้งาน</label>
                     <input class="form-control input-sm" type="text" name="name" required>
                   </div></div>	
                   
                   <div class="col-lg-4">
                    <div class="form-group">   
-                    <label>เพื่อใช้ในการ</label>
+                    <label>ภารกิจ</label>
                     <input class="form-control input-sm" type="text" name="object" required>
                   </div></div>	                                          
                 </div>
@@ -81,7 +81,7 @@ if($(this).prop('checked') == false){
                   <div class="row">     
                    <div class="col-lg-4">
                     <div class="form-group">
-                      <label>เริ่มขอใช้รถ</label>
+                      <label>วันและเวลาออกเดินทาง</label>
                       <div class="input-group date" id="datetimepicker1">
                         <input name="date-start" class="form-control input-sm"  type="text" required />
                         <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -101,7 +101,7 @@ if($(this).prop('checked') == false){
                 
                 <div class="col-lg-4">
                   <div class="form-group">
-                    <label>สิ้นสุดขอใช้รถ</label>
+                    <label>วันและเวลาเดินทางกลับ</label>
                     <div class='input-group date' id='datetimepicker2'>
                       <input name="date-end" class="form-control input-sm" type="text" required />
                       <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span>
@@ -265,7 +265,7 @@ if($(this).prop('checked') == false){
              </td>
            </tr>  
 
-           <tr style="background-color:#D9534F;">
+           <!-- <tr style="background-color:#D9534F;">
             <td width="30">
               <input name="typecar[]"  type="checkbox" value="รถเช่า" rel="5">
             </td> 
@@ -274,7 +274,7 @@ if($(this).prop('checked') == false){
             </td>
             <td><input type="checkbox" name="driver[]" value="รถเช่า"  rel="5"></td>
             <td colspan="7">ไม่ระบุ : ถ้าใช้รถเช่ากรุณาติ๊ก ไม่ระบุด้วยครับ</td>
-          </tr>  
+          </tr>   -->
         </table>           
         
       </div></div>

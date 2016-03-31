@@ -14,7 +14,7 @@ include 'menu-left.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ปฏิทินการใช้รถยนต์ คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา</title>
+    <title>ระบบจองรถตู้-วิทยุการบินเชียงใหม่</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -165,38 +165,16 @@ jQuery( document ).ready(function() {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../pages_demo/index.html">ระบบจองรถ ศูนย์ควบคุมการบินเชียงใหม่</a>
+                <a class="navbar-brand" href="#">ระบบจองรถตู้-ศูนย์ควบคุมการบินเชียงใหม่</a>
             </div>
             <!-- /.navbar-header -->
-
-
-           <ul class="nav navbar-top-links navbar-right">
-              <!-- /.dropdown -->
-                <li>
-                 <a href="#">
-                 		<i class="fa fa-user fa-fw"></i> 
-						<?php
-							echo $_SESSION['uname'];
-						?> 
-                        </a>
-              </li>
-              <li>
-              <a href="out.php">
-              		<i class="fa fa-sign-out fa-fw"></i> Logout</a>
-              </li>
-            </ul>
-
-			
-                    <!-- /.dropdown-user -->
               
-            <!-- /.navbar-top-links -->
-
             <div class="navbar-default sidebar" role="navigation" >
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu"  style="font-size:16px;">
 				   
 					    <li>
-                            <a href="http://http://www.aerothai.co.th" target="new"><img src="src/aero.png" alt="Smiley face" height="220" width="220"></a>
+                            <a href="http://www.aerothai.co.th/" target="new"><img src="src/aero.png" alt="Smiley face" height="220" width="220"></a>
                         </li>
                           <li class="btn-danger divider" style="height:3px;"></li>
                         <li>
@@ -208,20 +186,20 @@ jQuery( document ).ready(function() {
                         </li>
                         <li>
                             <a href="?menu=home" <?php if($menu == "home"){echo 'class="active alert-danger"';} ?>>
-											<i class="fa fa-calendar fa-fw"></i> ข้อมูลแบบปฏิทิน</a>
+											<i class="fa fa-calendar fa-fw"></i> ข้อมูลการจองแบบปฏิทิน</a>
                         </li>
                         <li>
-                            <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลแบบตาราง</a>
+                            <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลการจองแบบตาราง</a>
                         </li>
 
 
  <li class="btn-danger divider" style="height:3px;"></li>  
   
-		  <li><a href="?menu=add" <?php if($menu == "add"||$menu == "insert"){echo 'class="active alert-danger"';} ?>><i class="fa fa-save fa-fw"></i> เพิ่มข้อมูล</a></li>
+		  <li><a href="?menu=add" <?php if($menu == "add"||$menu == "insert"){echo 'class="active alert-danger"';} ?>><i class="fa fa-save fa-fw"></i> ขอใช้รถตู้</a></li>
 		  <li><a href="?menu=edit" <?php if($menu == "edit"){echo 'class="active alert-danger"';} ?>><i class="fa fa-gear fa-fw"></i> แก้ไขข้อมูล</a></li>
 		  <li><a href="?menu=delete" <?php if($menu == "delete"){echo 'class="active alert-danger"';} ?>><i class="fa fa-gear fa-fw"></i> ลบข้อมูล</a></li>          
 		                     
-         <li> <a href="out.php"><button class="btn btn-danger"><i class="fa fa-sign-out fa-fw"></i> Logout </button></a></li>
+         <li> <a href="out.php"><button class="btn btn-danger"><i class="fa fa-sign-out fa-fw"></i> ออกจากระบบ </button></a></li>
 
   
                          <li class="btn-danger divider" style="height:3px;"></li>  

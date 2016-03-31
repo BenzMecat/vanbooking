@@ -13,7 +13,7 @@ include 'menu-left.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ปฏิทินการใช้รถยนต์ คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา</title>
+    <title>ระบบจองรถตู้-วิทยุการบินเชียงใหม่</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -179,7 +179,7 @@ jQuery( document ).ready(function() {
         <!-- Navigation -->
         <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
             <div class="navbar-header">
-                <a class="navbar-brand">ระบบจองรถ ศูนย์ควบคุมการบินเชียงใหม่ </a>
+                <a class="navbar-brand" href="#">ระบบจองรถตู้-ศูนย์ควบคุมการบินเชียงใหม่</a>
             </div>
 
 	
@@ -198,15 +198,15 @@ jQuery( document ).ready(function() {
                     <ul class="nav" id="side-menu"  style="font-size:16px;">
 
                         <li>
-                            <a href="http://http://www.aerothai.co.th" target="new"><img src="src/aero.png" alt="Smiley face" height="220" width="220"></a>
+                            <a href="http://www.aerothai.co.th/" target="new"><img src="src/aero.png" alt="Smiley face" height="220" width="220"></a>
                         </li>
                           <li class="btn-danger divider" style="height:3px;"></li>  
                          <li>
                             <a href="?menu=home" <?php if($menu == "home"){echo 'class="active alert-danger"';} ?>>
-											<i class="fa fa-calendar fa-fw"></i> ข้อมูลแบบปฏิทิน</a>
+											<i class="fa fa-calendar fa-fw"></i> ข้อมูลการจองแบบปฏิทิน</a>
                         </li>
                         <li>
-                            <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลแบบตาราง</a>
+                            <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลการจองแบบตาราง</a>
                         </li>
                         
 
@@ -221,16 +221,16 @@ jQuery( document ).ready(function() {
                                         <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-user"></i>
                                             </span>
-                                            <input type="text" class="form-control" name="username" placeholder="Username" required>
+                                            <input type="text" class="form-control" name="username" placeholder="ชื่อผู้ใช้" required>
                                         </div>
                                         
                                         <div class="form-group input-group">
                                             <span class="input-group-addon"><i class="fa fa-lock"></i>
                                             </span>
-                                            <input type="password" class="form-control" name="password" placeholder="Password" required>
+                                            <input type="password" class="form-control" name="password" placeholder="รหัสผ่าน" required>
                                         </div>
                                         <p>
-                                        <button type="submit" class="btn btn-success btn-sm">Log In</button>
+                                        <button type="submit" class="btn btn-success "><i class="fa fa-sign-in fa-fw"></i> เข้าสู่ระบบ</button>
                                         </p>
                                   
                                     </form>

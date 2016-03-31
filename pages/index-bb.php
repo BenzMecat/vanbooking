@@ -1,11 +1,11 @@
-<?PHP
-session_start();
-include 'menu-left.php';
-	?>
-<!DOCTYPE html>
-<html lang="en">
+    <?PHP
+    session_start();
+    include 'menu-left.php';
+    ?>
+    <!DOCTYPE html>
+    <html lang="en">
 
-<head>
+    <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,7 +13,7 @@ include 'menu-left.php';
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>ปฏิทินการใช้รถยนต์ คณะศึกษาศาสตร์ มหาวิทยาลัยบูรพา</title>
+    <title>ระบบจองรถตู้-วิทยุการบินเชียงใหม่</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -24,8 +24,8 @@ include 'menu-left.php';
     <!-- DataTables Responsive CSS -->
     <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet">
 
-	<!-- Date -->
-	 <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <!-- Date -->
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
 
     <!-- Timeline CSS -->
     <link href="../dist/css/timeline.css" rel="stylesheet">
@@ -35,19 +35,19 @@ include 'menu-left.php';
 
     <!-- Custom Fonts -->
     <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    
-	<!--fancybox -->
-      <link rel="stylesheet" href="../fancy/jquery.fancybox.css" type="text/css" media="screen" />
 
-	<!-- Optionally add helpers - button, thumbnail and/or media -->
-	<link rel="stylesheet" href="../fancy/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+    <!--fancybox -->
+    <link rel="stylesheet" href="../fancy/jquery.fancybox.css" type="text/css" media="screen" />
 
-	<!-- fullcalendar -->
-	<link href='../fullcalendar.css' rel='stylesheet' />
-	<link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
- 
- 
- <!-- jQuery -->
+    <!-- Optionally add helpers - button, thumbnail and/or media -->
+    <link rel="stylesheet" href="../fancy/helpers/jquery.fancybox-buttons.css" type="text/css" media="screen" />
+
+    <!-- fullcalendar -->
+    <link href='../fullcalendar.css' rel='stylesheet' />
+    <link href='../fullcalendar.print.css' rel='stylesheet' media='print' />
+
+
+    <!-- jQuery -->
     <script src="../bower_components/jquery/dist/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
@@ -62,95 +62,95 @@ include 'menu-left.php';
 
 
     <!-- Custom Theme JavaScript -->
-<script src="../dist/js/sb-admin-2.js"></script>
- <script src='../lib/moment.min.js'></script>
-<script src='../fullcalendar.min.js'></script>
-<script src='../lang/th.js'></script>
-<script  src="../fancy/jquery.fancybox.pack.js"></script>
-<script  src="../fancy/helpers/jquery.fancybox-thumbs.js"></script>   
- <script  src="../fancy/helpers/jquery.fancybox-buttons.js"></script>
- 
-			<script src="js/moment-with-locales.js"></script>
-			<script src="src/bootstrap-datetimepicker.js"></script>
- 
- 
-<script type="text/javascript">
-jQuery( document ).ready(function() {   
+    <script src="../dist/js/sb-admin-2.js"></script>
+    <script src='../lib/moment.min.js'></script>
+    <script src='../fullcalendar.min.js'></script>
+    <script src='../lang/th.js'></script>
+    <script  src="../fancy/jquery.fancybox.pack.js"></script>
+    <script  src="../fancy/helpers/jquery.fancybox-thumbs.js"></script>   
+    <script  src="../fancy/helpers/jquery.fancybox-buttons.js"></script>
+
+    <script src="js/moment-with-locales.js"></script>
+    <script src="src/bootstrap-datetimepicker.js"></script>
+
+
+    <script type="text/javascript">
+    jQuery( document ).ready(function() {   
       var currentLangCode = 'th';
       $('#calendar').fullCalendar({
-            header: {
-                left: 'prev,next today',
-                center: 'title',
-                right: 'month,agendaWeek,agendaDay'
-            },          
+        header: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'month,agendaWeek,agendaDay'
+        },          
             eventLimit: true, // allow "more" link when too many events
             defaultDate: new Date(),
             lang: currentLangCode,
-			timezone: 'Asia/Bangkok',
+            timezone: 'Asia/Bangkok',
             events: {
-            url: 'data_events.php',
-         	},  
+                url: 'data_events.php',
+            },  
             loading: function(bool) {
                 $('#loading').toggle(bool);
             },
-			
-			eventClick: function(event) {
-    if (event.url) {
-      $.fancybox({
-        		'href' : event.url,
-        		'type' : 'iframe',
-				'autoScale'     	: false,
-				'openEffect' : 'elastic',
-        		'openSpeed'  : 'fast',
-                'closeEffect' : 'elastic',
-        		'closeSpeed'  : 'fast',
-				'closeBtn'  : true,
-				onClosed	:	function() {
-					parent.location.reload(true); 
-				},
-				helpers : {
-					thumbs : {
-						width  : 50,
-						height : 50
-					},
-					
-					overlay : {
-            				css : {
-                				'background' : 'rgba(49, 176, 213, 0.7)'
-           			 }
-       				 }
-				}
+            
+            eventClick: function(event) {
+                if (event.url) {
+                  $.fancybox({
+                      'href' : event.url,
+                      'type' : 'iframe',
+                      'autoScale'     	: false,
+                      'openEffect' : 'elastic',
+                      'openSpeed'  : 'fast',
+                      'closeEffect' : 'elastic',
+                      'closeSpeed'  : 'fast',
+                      'closeBtn'  : true,
+                      onClosed	:	function() {
+                       parent.location.reload(true); 
+                   },
+                   helpers : {
+                       thumbs : {
+                          width  : 50,
+                          height : 50
+                      },
+                      
+                      overlay : {
+                        css : {
+                            'background' : 'rgba(49, 176, 213, 0.7)'
+                        }
+                    }
+                }
             });
-      return false;
-    }
-  },
-			
-		
-        });
-    });
-</script>
-
-
-    
-        <script>
-    $(document).ready(function() {
-        $('#dataTables-example').DataTable({
-                responsive: true,
-				 "order": [[ 1, "desc" ]]
-        });
+                  return false;
+              }
+          },
+          
+          
+      });
     });
     </script>
-<style>
-	#calendar {
-		max-width: 900px;
-		margin: 0 auto;
-	}
 
-</style>
 
-</head>
 
-<body>
+    <script>
+    $(document).ready(function() {
+    $('#dataTables-example').DataTable({
+        responsive: true,
+        "order": [[ 1, "desc" ]]
+    });
+    });
+    </script>
+    <style>
+    #calendar {
+    max-width: 900px;
+    margin: 0 auto;
+    }
+
+    </style>
+
+    </head>
+
+    <body>
 
     <div id="wrapper">
 
@@ -167,99 +167,99 @@ jQuery( document ).ready(function() {
             </div>
             <!-- /.navbar-header -->
 
-                    <!-- /.dropdown-user -->
-              
+            <!-- /.dropdown-user -->
+            
             <!-- /.navbar-top-links -->
 
             <div class="navbar-default sidebar" role="navigation" >
                 <div class="sidebar-nav navbar-collapse">
                     <ul class="nav" id="side-menu"  style="font-size:16px;">
-				   
-					<li>
-                            <a href="http://www.edu.buu.ac.th" target="new"><i class="fa fa-home fa-fw"></i> คณะศึกษาศาสตร์</a>
-                        </li>
-                          <li class="btn-danger divider" style="height:3px;"></li>  
-                         <li>
-                            <a href="?menu=home" <?php if($menu == "home"){echo 'class="active alert-danger"';} ?>>
-											<i class="fa fa-calendar fa-fw"></i> ข้อมูลแบบปฏิทิน</a>
-                        </li>
-                        <li>
-                            <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลแบบตาราง</a>
-                        </li>
-                        <li class="btn-danger divider" style="height:3px;"></li>  
-              
-						  <li>
-                            <a href="#" target="new"><i class="fa fa-cab fa-fw"></i> สีแทนประเภทรถ</a>
-                        </li>
                      
-					  <li> <a href="#"><button class="btn btn-info"> รถบัส 40-0770 </button></a></li>
-					 <li> <a href="#"><button class="btn btn-warning"> รถตู้ นค 7118 </button></a></li>
-					 <li> <a href="#"><button class="btn btn-danger"> รถเช่า </button></a></li>
-					 <li> <a href="#"><button class="btn btn-success"> รถตู้ นง 625 </button></a></li>
-					 <li> <a href="#"><button class="btn btn-pickup"> กระบะ ผบ 8461 </button></a></li>
-
- <li class="btn-danger divider" style="height:3px;"></li>  
-   
-  
-   
-   <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-								  <form role="form" action="?menu=home#chkuser" method="post" name="login">
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-user"></i>
-                                            </span>
-                                            <input type="text" class="form-control" name="username" placeholder="Username" required>
-                                        </div>
-                                        
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-lock"></i>
-                                            </span>
-                                            <input type="password" class="form-control" name="password" placeholder="Password" required>
-                                        </div>
-                                        <p>
-                                        <button type="submit" class="btn btn-success btn-sm">Log In</button>
-                                        </p>
-                                  
-                                    </form>
-                            </div>
-                      </li>
-						   <a id="chkuser"></a>
-						    <?php
-						
-						include 'chkuser.php';
-						?>
-                         <li class="btn-danger divider" style="height:3px;"></li>  
-
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
-        </nav>
-
-      <div id="page-wrapper">
-
-		   <?php 
-		   	include $src_page;	
-		  ?>
-
-
-
+                       <li>
+                        <a href="http://www.edu.buu.ac.th" target="new"><i class="fa fa-home fa-fw"></i> คณะศึกษาศาสตร์</a>
+                    </li>
+                    <li class="btn-danger divider" style="height:3px;"></li>  
+                    <li>
+                        <a href="?menu=home" <?php if($menu == "home"){echo 'class="active alert-danger"';} ?>>
+                         <i class="fa fa-calendar fa-fw"></i> ข้อมูลแบบปฏิทิน</a>
+                     </li>
+                     <li>
+                        <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลแบบตาราง</a>
+                    </li>
+                    <li class="btn-danger divider" style="height:3px;"></li>  
                     
-        </div></div>          </div>
-                    <!-- /.panel .chat-panel -->
-                </div>
-                <!-- /.col-lg-4 -->
-            </div>
-            <!-- /.row -->
+                    <li>
+                        <a href="#" target="new"><i class="fa fa-cab fa-fw"></i> สีแทนประเภทรถ</a>
+                    </li>
+                    
+                    <li> <a href="#"><button class="btn btn-info"> รถบัส 40-0770 </button></a></li>
+                    <li> <a href="#"><button class="btn btn-warning"> รถตู้ นค 7118 </button></a></li>
+                    <li> <a href="#"><button class="btn btn-danger"> รถเช่า </button></a></li>
+                    <li> <a href="#"><button class="btn btn-success"> รถตู้ นง 625 </button></a></li>
+                    <li> <a href="#"><button class="btn btn-pickup"> กระบะ ผบ 8461 </button></a></li>
+
+                    <li class="btn-danger divider" style="height:3px;"></li>  
+                    
+                    
+                    
+                    <li class="sidebar-search">
+                        <div class="input-group custom-search-form">
+                          <form role="form" action="?menu=home#chkuser" method="post" name="login">
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-user"></i>
+                                </span>
+                                <input type="text" class="form-control" name="username" placeholder="Username" required>
+                            </div>
+                            
+                            <div class="form-group input-group">
+                                <span class="input-group-addon"><i class="fa fa-lock"></i>
+                                </span>
+                                <input type="password" class="form-control" name="password" placeholder="Password" required>
+                            </div>
+                            <p>
+                                <button type="submit" class="btn btn-success btn-sm">Log In</button>
+                            </p>
+                            
+                        </form>
+                    </div>
+                </li>
+                <a id="chkuser"></a>
+                <?php
+                
+                include 'chkuser.php';
+                ?>
+                <li class="btn-danger divider" style="height:3px;"></li>  
+
+            </ul>
         </div>
-        <!-- /#page-wrapper -->
+        <!-- /.sidebar-collapse -->
+    </div>
+    <!-- /.navbar-static-side -->
+    </nav>
+
+    <div id="page-wrapper">
+
+    <?php 
+    include $src_page;	
+    ?>
+
+
+
+
+    </div></div>          </div>
+    <!-- /.panel .chat-panel -->
+    </div>
+    <!-- /.col-lg-4 -->
+    </div>
+    <!-- /.row -->
+    </div>
+    <!-- /#page-wrapper -->
 
     </div>
     <!-- /#wrapper -->
 
-   
 
-</body>
 
-</html>
+    </body>
+
+    </html>
