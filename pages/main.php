@@ -166,7 +166,7 @@
                     <span class="icon-bar"></span>
                 </button>
                 <br>
-                <img src = "image/band.png" width="250" height="50" >
+                <img src = "image/band.png" width="230" height="45" >
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -185,7 +185,7 @@
                         <a href="?menu=tables" <?php if($menu == "tables"){echo 'class="active alert-danger"';} ?>><i class="fa fa-table fa-fw"></i> ข้อมูลการจองแบบตาราง</a>
                     </li>
                     <li><a href="?menu=add" <?php if($menu == "add"||$menu == "insert"){echo 'class="active alert-danger"';} ?>><i class="fa fa-bus fa-fw"></i> ขอใช้รถตู้</a></li>
-
+                    <li><a href="?menu=report-car" <?php if($menu == "report-car"){echo 'class="active alert-danger"';} ?>><i class="fa fa-bar-chart fa-fw"></i> สถิติการใช้รถ</a></li>
                     <li class="dropdown">
                     <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                         <i class="fa fa-gear fa-fw"></i> แก้ไขข้อมูล <i class="fa fa-caret-down"></i>

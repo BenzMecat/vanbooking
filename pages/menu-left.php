@@ -24,8 +24,7 @@ switch ($menu) {
 	case "report-driver":
 			$src_page = 'report-driver.php';
 			break;	
-						
-											
+													
 	case "add":
 			$src_page = 'cars-form.php';
 			break;	

@@ -39,8 +39,8 @@ if($(this).prop('checked') == false){
 
 
 <div class="row">
-                <div class="col-lg-12">
-    <h4 class="page-header alert alert-warning"><i class="fa fa-car fa-fw"></i> แบบฟอร์มขอใช้รถตู้</h4>
+  <div class="col-lg-12">
+    <h4 class="page-header alert alert-info"><i class="fa fa-bus fa-fw"></i> แบบฟอร์มขอใช้รถตู้</h4>
   </div>
   <!-- /.col-lg-12 -->
 </div>

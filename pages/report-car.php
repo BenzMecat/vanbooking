@@ -3,7 +3,7 @@
 		  ?>
 <div class="row">
                 <div class="col-lg-12">
-                 <h3 class="page-header alert btn-info"><i class="fa fa-car fa-fw"></i> สถิติการใช้รถยนต์</h3>
+                 <h4 class="page-header alert alert-info"><i class="fa fa-bar-chart fa-fw"></i> สถิติการใช้รถยนต์</h4>
                 </div>
      </div>
 
@@ -28,5 +28,4 @@
             <!-- /.row -->
    
 
-   <li class="btn-danger divider" style="height:3px;"></li>
  

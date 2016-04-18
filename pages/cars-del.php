@@ -22,7 +22,7 @@
 
   <div class="row">
     <div class="col-lg-12">
-      <h4 class="page-header alert alert-info"><i class="fa fa-car fa-fw"></i> ลบข้อมูลการขอใช้รถยนต์</h3>
+      <h4 class="page-header alert alert-info"><i class="fa fa-bus fa-fw"></i> ลบข้อมูลการขอใช้รถยนต์</h3>
       </div>
       <!-- /.col-lg-12 -->
     </div>
