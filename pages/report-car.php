@@ -3,7 +3,7 @@
 		  ?>
 <div class="row">
                 <div class="col-lg-12">
-                 <h4 class="page-header alert alert-info"><i class="fa fa-bar-chart fa-fw"></i> สถิติการใช้รถยนต์</h4>
+                 <h4 class="page-header alert alert-info"><i class="fa fa-bar-chart fa-fw"></i> สถิติการใช้ตู้</h4>
                 </div>
      </div>
 
